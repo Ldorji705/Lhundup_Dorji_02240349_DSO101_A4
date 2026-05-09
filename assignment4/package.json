@@ -1,0 +1,24 @@
+{
+  "name": "assignment4",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    }
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^16.0.0",
+    "supertest": "^6.3.3"
+  }
+}
